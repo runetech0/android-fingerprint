@@ -31,7 +31,7 @@ Homepage = "https://github.com/runetech0/android-fingerprint.git"
 github = "https://github.com/runetech0/android-fingerprint.git"
 
 [tool.bumpver]
-current_version = "0.3.0"
+current_version = "0.1.0"
 version_pattern = "MAJOR.MINOR.PATCH"
 commit_message = "bump version {old_version} -> {new_version}"
 tag_message = "{new_version}"
@@ -47,6 +47,7 @@ push = true
 
 "pyproject.toml" = [
     'current_version = "{version}"',
+     'version = "{version}"'  # 🔥 Add this line
 ]
 
 "android_fingerprint/__init__.py" = [
