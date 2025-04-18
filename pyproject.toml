@@ -47,7 +47,7 @@ push = true
 
 "pyproject.toml" = [
     'current_version = "{version}"',
-     'version = "{version}"'  # 🔥 Add this line
+     'version = "{version}"' 
 ]
 
 "android_fingerprint/__init__.py" = [
