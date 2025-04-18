@@ -1,0 +1,54 @@
+
+
+[build-system]
+
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+
+
+name = "android-fingerprint"
+version = "0.1.0"
+description = "Android fingerpints provider for making requests in android based APIs"
+
+authors = [
+    {name = "Rune Tech", email = "runetech2024@gmail.com"}
+]
+
+license = { file = "LICENSE" }
+readme = "README.md"
+
+dependencies = [
+]
+requires-python = ">=3.11"
+
+keywords = ["android-fingerprint", "requests-fingerprint", "http-fingerprints"]
+
+[project.urls]
+
+Homepage = "https://github.com/runetech0/android-fingerprint.git"
+github = "https://github.com/runetech0/android-fingerprint.git"
+
+[tool.bumpver]
+current_version = "0.1.0"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+tag_message = "{new_version}"
+tag_scope = "default"
+pre_commit_hook = ""
+post_commit_hook = ""
+commit = true
+tag = true
+push = true
+
+
+[tool.bumpver.file_patterns]
+
+"pyproject.toml" = [
+    'current_version = "{version}"',
+]
+
+"android_fingerprint/__init__.py" = [
+    "{version}"
+]
