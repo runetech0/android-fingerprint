@@ -1,13 +1,10 @@
 # Re-defining the protocol after kernel reset
 from typing import Protocol, runtime_checkable
-from typing import Dict
-
-# Placeholder for DeviceDataT
-DeviceDataT = Dict[str, str | int]  # replace with actual strict type if available
+from .device_data import DeviceDataT
 
 
 @runtime_checkable
-class AndroidProtocol(Protocol):
+class AndroidT(Protocol):
     model_name: str
     build_id: str
     android_version_full: str

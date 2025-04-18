@@ -1,5 +1,5 @@
 import random
-from .types.android_data import DeviceDataT
+from .types.device_data import DeviceDataT
 from .data.google_phones import GOOGLE_DEIVCES_LIST
 
 

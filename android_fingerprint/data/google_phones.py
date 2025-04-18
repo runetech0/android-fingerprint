@@ -1,4 +1,4 @@
-from ..types.android_data import DeviceDataT
+from ..types.device_data import DeviceDataT
 GOOGLE_DEIVCES_LIST: list[DeviceDataT] = [
     {
         "model_name": "Pixel 9 Pro Fold",
